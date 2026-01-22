@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+  <head>
+    <title>rotation-text</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap" rel="stylesheet">
+          
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://assets.incode.it/gsap-business/minified/SplitText.min.js"></script>
+
+
+  </script>
+
+    <style>
+
+     @layer utilities {
+        /* Palette colori personalizzata */
+        .bg-dark { background-color: #333333; }
+        .bg-purple { background-color: #6533E3; }
+        .bg-gray-light { background-color: #C2B6AE; }
+        .bg-peach { background-color: #F2D1BA; }
+        .bg-beige { background-color: #F7E8DE; }
+        .bg-cream { background-color: #F5F5F5; }
+        
+        .text-dark { color: #333333; }
+        .text-purple { color: #6533E3; }
+        .text-gray-light { color: #C2B6AE; }
+        .text-peach { color: #F2D1BA; }
+        .text-beige { color: #F7E8DE; }
+        .text-cream { color: #F5F5F5; }
+        
+        .border-dark { border-color: #333333; }
+        .border-purple { border-color: #6533E3; }
+        .border-gray-light { border-color: #C2B6AE; }
+        .border-peach { border-color: #F2D1BA; }
+        .border-beige { border-color: #F7E8DE; }
+        .border-cream { border-color: #F5F5F5; }
+      }
+
+
+
+      body {
+        font-family: 'galada';
+      }
+
+
+        html {
+        box-sizing: border-box;
+        }
+        *,
+        *:before,
+        *:after {
+        box-sizing: inherit;
+        }
+
+        body,
+        html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        }
+
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        }
+
+       .tube {
+        position: relative;
+        width: 100%;
+        height: 20vw;
+        }
+
+        .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1.5;
+        margin: 0;
+        font-size: 12vw;
+        white-space: nowrap;
+        text-align: center;
+        }
+
+        .line div {
+        backface-visibility: hidden;
+        }
+
+    </style>
+    
+  </head>
+
+  <body>
+
+    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6">
+      <div class="group relative inline-block">
+        <div class="flex items-center gap-4 cursor-pointer">
+          <div class="text-2xl font-bold text-peach transition-colors">Site 01</div>
+          <div class="flex flex-col gap-1 w-6">
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+          </div>
+        </div>
+
+        <div class="absolute left-0 top-full pt-2 hidden group-hover:block backdrop-blur-md bg-dark/80 rounded-xl overflow-hidden shadow-2xl border border-white/10 min-w-[210px]">
+          <ul class="flex flex-col">
+            <li>
+              <a href="index.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">01</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index</span>
+              </a>
+            </li>
+            <li>
+              <a href="index-navbar.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">02</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index Navbar</span>
+              </a>
+            </li>
+            <li>
+              <a href="rotation-text.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">03</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Rotation Text</span>
+              </a>
+            </li>
+            <li>
+              <a href="section-cube.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">04</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Section Cube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <section id="section1" class="flex items-center justify-center h-screen bg-purple">
+      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-6 font-bold">01</div>
+      <div class="container">
+        <div class="tube">
+            <h1 class="line line1 text-peach">Il mondo</h1>
+            <h1 class="line line2 text-cream">è un libro</h1>
+            <h1 class="line line3 text-peach">per viaggiare</h1>
+            <h1 class="line line3 text-cream">sorridendo</h1>
+        </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <script>
+        // original - https://codepen.io/petebarr/pen/oJvVpw
+
+        gsap.registerPlugin(SplitText);
+
+        console.clear();
+
+        // Make container visible
+        const container = document.querySelector(".container");
+        gsap.set(container, { visibility: "visible" });
+
+        // Grab all lines
+        const lines = document.querySelectorAll(".line");
+
+        // Split characters for all lines
+        const splitLines = Array.from(lines).map(line => 
+        new SplitText(line, { type: "chars", charsClass: "char" })
+        );
+
+        // 3D setup
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const depth = -width / 8;
+        const transformOrigin = `50% 50% ${depth}`;
+
+        gsap.set(lines, { perspective: 700, transformStyle: "preserve-3d" });
+
+        // Timeline animation
+        const animTime = 0.9;
+        const tl = gsap.timeline({repeat: -1});
+
+        // Animate each line in a loop
+        splitLines.forEach((split, index) => {
+        tl.fromTo(
+            split.chars,
+            { rotationX: -90 },
+            { rotationX: 90, stagger: 0.08, duration: animTime, ease: "none", transformOrigin },
+            index * 0.45 // stagger between lines
+        );
+        });
+
+
+    </script>
+  </body>
+</html>

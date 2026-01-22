@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+  <head>
+    <title>index</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap" rel="stylesheet">
+
+          
+    
+    <script src="https://assets.incode.it/gsap-business/minified/gsap.min.js"></script>  <!-- link a gsap completo -->
+    <script src="https://assets.incode.it/gsap-business/minified/ScrollTrigger.min.js"></script>
+    <script src="https://assets.incode.it/gsap-business/minified/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+  </script>
+
+    <style>
+      @layer utilities {
+        .bg-dark { background-color: #333333; }
+        .bg-purple { background-color: #6533E3; }
+        .bg-gray-light { background-color: #C2B6AE; }
+        .bg-peach { background-color: #F2D1BA; }
+        .bg-beige { background-color: #F7E8DE; }
+        .bg-cream { background-color: #F5F5F5; }
+        
+        .text-dark { color: #333333; }
+        .text-purple { color: #6533E3; }
+        .text-gray-light { color: #C2B6AE; }
+        .text-peach { color: #F2D1BA; }
+        .text-beige { color: #F7E8DE; }
+        .text-cream { color: #F5F5F5; }
+        
+        .border-dark { border-color: #333333; }
+        .border-purple { border-color: #6533E3; }
+        .border-gray-light { border-color: #C2B6AE; }
+        .border-peach { border-color: #F2D1BA; }
+        .border-beige { border-color: #F7E8DE; }
+        .border-cream { border-color: #F5F5F5; }
+      }
+
+
+
+      body {
+        font-family: 'galada';
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+
+  <body class="m-0 p-0 font-['Galada',cursive]">
+    <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6">
+      <div class="group relative inline-block">
+        <div class="flex items-center gap-4 cursor-pointer">
+          <div class="text-2xl font-bold text-peach transition-colors">Site 01</div>
+          <div class="flex flex-col gap-1 w-6">
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+            <span class="h-0.5 w-full bg-peach block transition-colors"></span>
+          </div>
+        </div>
+
+        <div class="absolute left-0 top-full pt-2 hidden group-hover:block backdrop-blur-md bg-dark/80 rounded-xl overflow-hidden shadow-2xl border border-white/10 min-w-[210px]">
+          <ul class="flex flex-col">
+            <li>
+              <a href="index.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">01</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index</span>
+              </a>
+            </li>
+            <li>
+              <a href="index-navbar.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">02</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index Navbar</span>
+              </a>
+            </li>
+            <li>
+              <a href="rotation-text.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">03</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Rotation Text</span>
+              </a>
+            </li>
+            <li>
+              <a href="section-cube.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+                <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">04</span>
+                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Section Cube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="section1" class="h-screen flex items-center justify-center bg-dark">
+      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-6 font-bold z-11">01</div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 pointer-events-none">
+        <p class="text-peach text-[4vw]">Magic</p>
+        <p class="text-peach text-[2vw]">click me</p>
+      </div>
+      <div class="flex justify-center items-center min-h-screen">
+        <svg class="absolute left-0 top-0 bottom-0 right-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMin slice">
+          <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="99" y2="99" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#6533E3" />
+              <stop offset="1" stop-color="#F2D1BA" />
+            </linearGradient>
+          </defs>
+          <path class="path" stroke="url(#grad)" fill="url(#grad)" stroke-width="2px" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="section2" class="relative flex flex-col items-center justify-center min-h-screen py-20 bg-dark">
+      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-6 font-bold">02</div>
+      <div class="title text-center leading-tight text-[4vw] text-peach mb-10 ">Photos</div>
+      
+      <div class="container max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=1" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=2" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=3" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=4" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=5" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+          <div class="item rounded overflow-hidden">
+            <img src="https://picsum.photos/800/600?random=6" alt="image" class="w-full h-full object-cover cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script>
+      const path = document.querySelector(".path");
+      
+      // Oggetto con i valori da animare
+      const pathData = {
+        v1: 100,
+        v2: 100,
+        qy: 100
+      };
+
+      // Funzione per aggiornare il path
+      function updatePath() {
+        const d = `M 0 100 V ${pathData.v1} Q 50 ${pathData.qy} 100 ${pathData.v2} V 100 z`;
+        path.setAttribute('d', d);
+      }
+
+      // Timeline GSAP
+      const tl = gsap.timeline({paused: true});
+      
+      tl.to(pathData, {
+        v1: 50,
+        v2: 50,
+        qy: 0,
+        duration: 0.8,
+        ease: "power2.in",
+        onUpdate: updatePath
+      })
+      .to(pathData, {
+        v1: 0,
+        v2: 0,
+        qy: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        onUpdate: updatePath
+      });
+
+      // Toggle animazione al click
+      document.body.addEventListener("click", () => {
+        if (tl.progress() === 0 || tl.reversed()) {
+          tl.play();
+        } else {
+          tl.reverse();
+        }
+      });
+
+
+
+
+
+      // Animazione titolo
+      gsap.from("#section1 .title", {
+        scrollTrigger: {
+          trigger: "#section1",
+          start: "top center",
+          toggleActions: "play none none reverse"
+        },
+        y: -50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7
+      });
+
+      // Animazione elementi della griglia - entrata sequenziale dal basso
+      gsap.from("#section1 .item", {
+        scrollTrigger: {
+          trigger: "#section1 .grid",
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        },
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out",
+        delay: 2
+      });
+
+
+
+
+
+    </script>
+  </body>
+</html>
