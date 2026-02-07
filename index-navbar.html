@@ -1,63 +1,48 @@
 <!doctype html>
 <html>
   <head>
-    <title>index</title>
+    <title>index-navbar</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-
+    <!-- Font Galada -->
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap" rel="stylesheet">
 
-          
-    
-    <script src="https://assets.incode.it/gsap-business/minified/gsap.min.js"></script>  <!-- link a gsap completo -->
+    <!-- GSAP -->
+    <script src="https://assets.incode.it/gsap-business/minified/gsap.min.js"></script>
     <script src="https://assets.incode.it/gsap-business/minified/ScrollTrigger.min.js"></script>
     <script src="https://assets.incode.it/gsap-business/minified/SplitText.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
-
-  </script>
-
+    
+    <!-- Tailwind CDN + config colori custom -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              peach: '#F2D1BA',
+              dark: '#333333',
+              cream: '#F5F5F5',
+              purple: '#6533E3',
+              'gray-light': '#C2B6AE',
+              beige: '#F7E8DE'
+            }
+          }
+        }
+      }
+    </script>
+ 
     <style>
-      @layer utilities {
-        .bg-dark { background-color: #333333; }
-        .bg-purple { background-color: #6533E3; }
-        .bg-gray-light { background-color: #C2B6AE; }
-        .bg-peach { background-color: #F2D1BA; }
-        .bg-beige { background-color: #F7E8DE; }
-        .bg-cream { background-color: #F5F5F5; }
-        
-        .text-dark { color: #333333; }
-        .text-purple { color: #6533E3; }
-        .text-gray-light { color: #C2B6AE; }
-        .text-peach { color: #F2D1BA; }
-        .text-beige { color: #F7E8DE; }
-        .text-cream { color: #F5F5F5; }
-        
-        .border-dark { border-color: #333333; }
-        .border-purple { border-color: #6533E3; }
-        .border-gray-light { border-color: #C2B6AE; }
-        .border-peach { border-color: #F2D1BA; }
-        .border-beige { border-color: #F7E8DE; }
-        .border-cream { border-color: #F5F5F5; }
-      }
-
-
-
       body {
-        font-family: 'galada';
+        font-family: 'Galada', cursive;
       }
-
     </style>
     
   </head>
 
   <body>
-
-  <body class="m-0 p-0 font-['Galada',cursive]">
     <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6">
       <div class="group relative inline-block">
         <div class="flex items-center gap-4 cursor-pointer">
@@ -68,40 +53,40 @@
             <span class="h-0.5 w-full bg-peach block transition-colors"></span>
           </div>
         </div>
-
-        <div class="absolute left-0 top-full pt-2 hidden group-hover:block backdrop-blur-md bg-dark/80 rounded-xl overflow-hidden shadow-2xl border border-white/10 min-w-[210px]">
+        <div class="absolute left-0 top-full hidden group-hover:block backdrop-blur-md bg-dark/80 rounded-xl overflow-hidden shadow-2xl border border-white/10 min-w-[210px]">
           <ul class="flex flex-col">
             <li>
-              <a href="index.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+              <a href="index.html" class="block flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
                 <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">01</span>
-                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index</span>
+                <span class="text-sm tracking-widest text-cream group-hover:text-peach">Index</span>
               </a>
             </li>
             <li>
-              <a href="index-navbar.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+              <a href="index-navbar.html" class="block flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
                 <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">02</span>
-                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Index Navbar</span>
+                <span class="text-sm tracking-widest text-cream group-hover:text-peach">Index Navbar</span>
               </a>
             </li>
             <li>
-              <a href="rotation-text.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+              <a href="rotation-text.html" class="block flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
                 <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">03</span>
-                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Rotation Text</span>
+                <span class="text-sm tracking-widest text-cream group-hover:text-peach">Rotation Text</span>
               </a>
             </li>
             <li>
-              <a href="section-cube.html" class="group/link flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
+              <a href="section-cube.html" class="block flex items-center gap-6 px-6 py-4 transition-all hover:bg-peach/10">
                 <span class="text-xl font-bold text-peach border-r border-peach/30 pr-4">04</span>
-                <span class="text-sm tracking-widest text-cream group-hover/link:text-peach">Section Cube</span>
+                <span class="text-sm tracking-widest text-cream group-hover:text-peach">Section Cube</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> 
 
     <section id="section1" class="h-screen flex items-center justify-center bg-dark">
-      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-6 font-bold z-11">01</div>
+
+      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-5 font-bold z-[999]">01</div>
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 pointer-events-none">
         <p class="text-peach text-[4vw]">Magic</p>
         <p class="text-peach text-[2vw]">click me</p>
@@ -120,7 +105,7 @@
     </section>
 
     <section id="section2" class="relative flex flex-col items-center justify-center min-h-screen py-20 bg-dark">
-      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-6 font-bold">02</div>
+      <div class="section-number absolute top-[40px] right-[40px] text-[8vw] opacity-5 font-bold z-[999]">02</div>
       <div class="title text-center leading-tight text-[4vw] text-peach mb-10 ">Photos</div>
       
       <div class="container max-w-6xl mx-auto px-4">
