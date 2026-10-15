@@ -17,19 +17,39 @@ if (heroGrid) {
   const cellSize = 20;
   const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   let lastPointer = null;
+  const trailCells = [];
 
   const hero = heroGrid.closest('.hero');
+  const removeCell = (cell) => {
+    const index = trailCells.indexOf(cell);
+    if (index !== -1) trailCells.splice(index, 1);
+    cell.remove();
+  };
+
   const lightCell = (column, row) => {
+    const existingIndex = trailCells.findIndex((cell) => cell.dataset.column === String(column) && cell.dataset.row === String(row));
+    if (existingIndex !== -1) removeCell(trailCells[existingIndex]);
+
     const cell = document.createElement('span');
     cell.className = 'hero-grid-cell';
     cell.setAttribute('aria-hidden', 'true');
+    cell.dataset.column = column;
+    cell.dataset.row = row;
     cell.style.left = `${column * cellSize + 1}px`;
     cell.style.top = `${row * cellSize + 1}px`;
     heroGrid.append(cell);
+    trailCells.push(cell);
+
+    while (trailCells.length > 8) removeCell(trailCells[0]);
+    trailCells.forEach((trailCell, index) => {
+      const distanceFromPointer = trailCells.length - index - 1;
+      trailCell.style.setProperty('--trail-opacity', (1 - distanceFromPointer * 0.12).toFixed(2));
+    });
+
     if (motionPreference.matches) {
-      window.setTimeout(() => cell.remove(), 550);
+      window.setTimeout(() => removeCell(cell), 450);
     } else {
-      cell.addEventListener('animationend', () => cell.remove(), { once: true });
+      cell.addEventListener('animationend', () => removeCell(cell), { once: true });
     }
   };
 

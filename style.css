@@ -95,9 +95,10 @@ body::after {
   width: 18px;
   height: 18px;
   background: var(--accent);
-  opacity: 0;
+  filter: opacity(var(--trail-opacity, 1));
+  opacity: 1;
   pointer-events: none;
-  animation: hero-grid-cell-fade 1s linear forwards;
+  animation: hero-grid-cell-fade .6s linear forwards;
 }
 .hero-meta, .hero-title-wrap, .hero-bottom { position: relative; z-index: 2; }
 .hero-meta { display: flex; align-items: center; gap: 10px; height: 64px; }
@@ -188,7 +189,7 @@ body::after {
 
 .pixel-trail { position: fixed; z-index: 60; width: var(--pixel-size, 7px); height: var(--pixel-size, 7px); pointer-events: none; background: #fff; opacity: var(--pixel-opacity, .5); mix-blend-mode: difference; transform: translate(-50%, -50%); image-rendering: pixelated; animation: pixel-fade 1.25s linear forwards; }
 @keyframes pixel-fade { to { opacity: 0; transform: translate(-50%, -50%) scale(.35) rotate(45deg); } }
-@keyframes hero-grid-cell-fade { 0%, 50% { opacity: 1; } to { opacity: 0; } }
+@keyframes hero-grid-cell-fade { 0%, 18% { opacity: 1; } to { opacity: 0; } }
 
 .status-dot { box-shadow: 0 0 0 4px rgba(245,220,78,.2); }
 .about-body { color: #d0cfc9; }
@@ -284,5 +285,5 @@ body::after {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-grid-cell { animation: none; opacity: 1; }
+  .hero-grid-cell { animation: none !important; }
 }
