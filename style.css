@@ -95,7 +95,6 @@ body::after {
   width: 18px;
   height: 18px;
   background: var(--accent);
-  filter: opacity(var(--trail-opacity, 1));
   opacity: 1;
   pointer-events: none;
   animation: hero-grid-cell-fade .6s linear forwards;

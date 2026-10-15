@@ -43,7 +43,7 @@ if (heroGrid) {
     while (trailCells.length > 8) removeCell(trailCells[0]);
     trailCells.forEach((trailCell, index) => {
       const distanceFromPointer = trailCells.length - index - 1;
-      trailCell.style.setProperty('--trail-opacity', (1 - distanceFromPointer * 0.12).toFixed(2));
+      trailCell.style.filter = `opacity(${(1 - distanceFromPointer * 0.12).toFixed(2)})`;
     });
 
     if (motionPreference.matches) {
