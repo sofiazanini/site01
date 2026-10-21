@@ -1,12 +1,4 @@
 # Sofia Zanini — Portfolio
 
-The site uses Tailwind CSS for responsive layout utilities and `custom.css` for
-the portfolio's visual effects and component styling.
-
-```sh
-npm install
-npm run build
-```
-
-The build writes the compiled stylesheet to `style.css`, which is loaded by all
-three HTML pages.
+The static pages load `style.css` directly. It contains the compiled Tailwind
+utilities and the portfolio's custom styles, so no build step is needed.
