@@ -1,42 +1,43 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
   <meta name="description" content="Sofia Zanini, studentessa di Digital Design e Communication a LABA Brescia. Scopri di più e trova i suoi contatti e social.">
   <title>About &amp; contatti — Sofia Zanini</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
+<body class="m-0 bg-[var(--paper)] font-[family-name:var(--sans)] text-[var(--ink)] antialiased">
   <div class="grain" aria-hidden="true"></div>
-  <header class="site-header grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
+  <header class="site-header relative z-10 grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center border-b border-[var(--line)] px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
     <a class="wordmark" href="index.html" aria-label="Sofia Zanini, homepage">SZ<span class="wordmark-dot">.</span></a>
     <nav class="site-nav flex justify-center gap-[clamp(1.5rem,4vw,4.5rem)] max-[760px]:gap-[clamp(.8rem,3.3vw,1.6rem)] max-[400px]:col-span-full max-[400px]:row-start-2 max-[400px]:justify-start max-[400px]:pb-3" aria-label="Navigazione principale">
-      <a class="nav-link" href="index.html">Home <span>01</span></a>
-      <a class="nav-link" href="lavori.html">Lavori <span>02</span></a>
-      <a class="nav-link is-active" href="about.html" aria-current="page">About <span>03</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)]" href="index.html">Home <span class="ml-1 text-[.55rem] text-[var(--muted)]">01</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)]" href="lavori.html">Lavori <span class="ml-1 text-[.55rem] text-[var(--muted)]">02</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)] is-active" href="about.html" aria-current="page">About <span class="ml-1 text-[.55rem] text-[var(--muted)]">03</span></a>
     </nav>
-    <a class="header-contact max-[400px]:col-start-2 max-[400px]:row-start-1" href="#contatti">Parliamone <span aria-hidden="true">↗</span></a>
+    <a class="header-contact justify-self-end border-b border-[var(--ink)] py-[7px] max-[400px]:col-start-2 max-[400px]:row-start-1" href="#contatti">Parliamone <span aria-hidden="true">↗</span></a>
   </header>
 
   <main class="about-page">
-    <section class="page-intro px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))]">
-      <p class="eyebrow reveal">03 / PIACERE, SOFIA</p>
-      <h1 class="page-title reveal">About<span class="title-period">.</span></h1>
-      <div class="page-intro-bottom reveal">
-        <p>Una mente curiosa,<br>un occhio sempre acceso.</p>
-        <span>STUDENTESSA<br>DI DESIGN · BRESCIA</span>
+    <section class="page-intro px-[10.4vw] pt-[92px] pb-[56px] max-[760px]:px-[6vw] max-[760px]:pt-[72px] max-[760px]:pb-[45px] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))]">
+      <p class="eyebrow reveal m-0 text-[#c7c5be]">03 / PIACERE, SOFIA</p>
+      <h1 class="page-title reveal my-0 mt-[58px] mb-[48px] text-[clamp(5rem,14vw,13rem)] font-semibold leading-[.8] tracking-[-.105em] max-[760px]:mt-[45px] max-[760px]:mb-[36px]">About<span class="title-period">.</span></h1>
+      <div class="page-intro-bottom reveal flex items-end justify-between">
+        <p class="m-0 text-[clamp(1rem,1.5vw,1.35rem)] leading-[1.35]">Una mente curiosa,<br>un occhio sempre acceso.</p>
+        <span class="text-right leading-[1.7] text-[#c7c5be]">STUDENTESSA<br>DI DESIGN · BRESCIA</span>
       </div>
     </section>
 
     <section class="about-content px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-2 items-center gap-[11vw] pt-[30px] pb-[145px] max-[760px]:grid-cols-1 max-[760px]:gap-[50px] max-[760px]:pt-[20px] max-[760px]:pb-[90px]">
-      <div class="about-profile reveal">
-        <img src="assets/sofia-profile.jpg" alt="Foto profilo pubblica di Sofia Zanini su Instagram" width="150" height="150">
+      <div class="about-profile reveal min-w-0">
+        <img class="block h-auto w-[min(100%,360px)] object-contain" src="assets/sofia-profile.jpg" alt="Foto profilo pubblica di Sofia Zanini su Instagram" width="150" height="150">
       </div>
       <div class="about-copy reveal">
-        <p class="eyebrow">CHI SONO</p>
+        <p class="eyebrow m-0 text-[#c7c5be]">CHI SONO</p>
         <h2>Dal concept<br><em>alla forma.</em></h2>
         <p class="about-body">Sono Sofia, studentessa di Digital Design e Communication a LABA Brescia. Dopo una formazione in Graphic Design &amp; Multimedia, continuo a esplorare il linguaggio visivo tra identità, grafica e motion.</p>
         <p class="about-body">Mi piace osservare, sperimentare e trovare il dettaglio che fa la differenza. Questo spazio raccoglie una parte del mio percorso creativo.</p>
@@ -44,22 +45,22 @@
       </div>
     </section>
 
-    <section class="social-section px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-[.8fr_1.2fr] gap-[10vw] pt-[95px] pb-[130px] max-[760px]:grid-cols-1 max-[760px]:gap-[35px] max-[760px]:pt-[75px] max-[760px]:pb-[85px]" id="contatti">
+    <section class="social-section bg-[#111] px-[10.4vw] text-[#f2f0e9] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-[.8fr_1.2fr] gap-[10vw] pt-[95px] pb-[130px] max-[760px]:grid-cols-1 max-[760px]:gap-[35px] max-[760px]:pt-[75px] max-[760px]:pb-[85px]" id="contatti">
       <div class="social-heading reveal">
-        <p class="eyebrow">TROVAMI ONLINE</p>
+        <p class="eyebrow m-0 text-[#c7c5be]">TROVAMI ONLINE</p>
         <h2>Stay<br><em>connected.</em></h2>
         <p>Hai un'idea in mente o vuoi scambiare due parole? Mi trovi qui.</p>
       </div>
-      <div class="social-links reveal">
-        <a href="https://www.instagram.com/_sofizanini.graphic_/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>DAILY LIFE ↗</span></a>
-        <a href="https://www.behance.net/sofizanini_graphic" target="_blank" rel="noopener noreferrer"><span>Behance</span><span>PROGETTI ↗</span></a>
-        <a href="https://dribbble.com/sofizanini_graphic" target="_blank" rel="noopener noreferrer"><span>Dribbble</span><span>SHOTS ↗</span></a>
-        <a href="https://github.com/sofiazanini" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>CODICE ↗</span></a>
+      <div class="social-links reveal self-center">
+        <a class="flex items-baseline justify-between gap-5" href="https://www.instagram.com/_sofizanini.graphic_/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>DAILY LIFE ↗</span></a>
+        <a class="flex items-baseline justify-between gap-5" href="https://www.behance.net/sofizanini_graphic" target="_blank" rel="noopener noreferrer"><span>Behance</span><span>PROGETTI ↗</span></a>
+        <a class="flex items-baseline justify-between gap-5" href="https://dribbble.com/sofizanini_graphic" target="_blank" rel="noopener noreferrer"><span>Dribbble</span><span>SHOTS ↗</span></a>
+        <a class="flex items-baseline justify-between gap-5" href="https://github.com/sofiazanini" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>CODICE ↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
+  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 border-t border-[var(--line)] px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
     <a class="footer-mark" href="index.html">SZ<span>.</span></a>
     <span>FATTO CON CURIOSITÀ, A BRESCIA.</span>
     <a href="https://www.instagram.com/_sofizanini.graphic_/" target="_blank" rel="noopener noreferrer">SAY CIAO <span aria-hidden="true">↗</span></a>
