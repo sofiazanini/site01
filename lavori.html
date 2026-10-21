@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body class="m-0 bg-[var(--paper)] font-[family-name:var(--sans)] text-[var(--ink)] antialiased">
+<body class="m-0 bg-(--paper) font-(family-name:--sans) text-(--ink) antialiased">
   <div class="grain" aria-hidden="true"></div>
-  <header class="site-header relative z-10 grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center border-b border-[var(--line)] px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
+  <header class="site-header relative z-10 grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center border-b border-(--line) px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
     <a class="wordmark" href="index.html" aria-label="Sofia Zanini, homepage">SZ<span class="wordmark-dot">.</span></a>
     <nav class="site-nav flex justify-center gap-[clamp(1.5rem,4vw,4.5rem)] max-[760px]:gap-[clamp(.8rem,3.3vw,1.6rem)] max-[400px]:col-span-full max-[400px]:row-start-2 max-[400px]:justify-start max-[400px]:pb-3" aria-label="Navigazione principale">
-      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)]" href="index.html">Home <span class="ml-1 text-[.55rem] text-[var(--muted)]">01</span></a>
-      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)] is-active" href="lavori.html" aria-current="page">Lavori <span class="ml-1 text-[.55rem] text-[var(--muted)]">02</span></a>
-      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-[var(--accent)]" href="about.html">About <span class="ml-1 text-[.55rem] text-[var(--muted)]">03</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-(--accent)" href="index.html">Home <span class="ml-1 text-[.55rem] text-(--muted)">01</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-(--accent) is-active" href="lavori.html" aria-current="page">Lavori <span class="ml-1 text-[.55rem] text-(--muted)">02</span></a>
+      <a class="nav-link relative py-[10px] transition-colors duration-200 hover:text-(--accent)" href="about.html">About <span class="ml-1 text-[.55rem] text-(--muted)">03</span></a>
     </nav>
-    <a class="header-contact justify-self-end border-b border-[var(--ink)] py-[7px] max-[400px]:col-start-2 max-[400px]:row-start-1" href="about.html#contatti">Parliamone <span aria-hidden="true">↗</span></a>
+    <a class="header-contact justify-self-end border-b border-(--ink) py-[7px] max-[400px]:col-start-2 max-[400px]:row-start-1" href="about.html#contatti">Parliamone <span aria-hidden="true">↗</span></a>
   </header>
 
   <main class="projects-page">
@@ -36,7 +36,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.instagram.com/p/DeWUWdfDl7m/" target="_blank" rel="noopener noreferrer" aria-label="Apri il progetto Dimusi Magazine su Instagram">
           <img class="h-full w-full object-cover" src="assets/cover.webp" alt="Copertina di Dimusi, progetto di tesi sulla musica contemporanea" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">01</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">01</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Dimusi Magazine</h2><p class="m-0 text-[#c0beb8]">PROGETTO DI TESI · EDITORIALE</p></div>
@@ -47,7 +47,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.behance.net/gallery/248690489/Doomsday-Clock-Corporate-Identity" target="_blank" rel="noopener noreferrer" aria-label="Apri Doomsday Clock | Corporate Identity su Behance">
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/ddc05a248690489.Y3JvcCwxMDA2LDc4NywxMDksMA.jpg" alt="Anteprima del progetto Doomsday Clock | Corporate Identity" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">02</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">02</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Doomsday Clock</h2><p class="m-0 text-[#c0beb8]">CORPORATE IDENTITY</p></div>
@@ -58,7 +58,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.behance.net/gallery/248558731/Modula-Playing-Cards-Design-Project" target="_blank" rel="noopener noreferrer" aria-label="Apri Modula | Playing Cards Design Project su Behance">
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/8a444e248558731.Y3JvcCwxNjE2LDEyNjQsMCww.jpg" alt="Anteprima del progetto Modula | Playing Cards Design Project" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">03</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">03</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Modula</h2><p class="m-0 text-[#c0beb8]">PLAYING CARDS DESIGN</p></div>
@@ -69,7 +69,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.behance.net/gallery/248345995/Pittogrammi-e-Ideogrammi-Visual-Synthesis-Study" target="_blank" rel="noopener noreferrer" aria-label="Apri Pittogrammi e Ideogrammi | Visual Synthesis Study su Behance">
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/c0b53a248345995.Y3JvcCwxNjE2LDEyNjQsMCww.jpg" alt="Anteprima del progetto Pittogrammi e Ideogrammi | Visual Synthesis Study" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">04</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">04</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Pittogrammi e Ideogrammi</h2><p class="m-0 text-[#c0beb8]">VISUAL SYNTHESIS STUDY</p></div>
@@ -80,7 +80,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.instagram.com/p/DYrAnF4jUCy/" target="_blank" rel="noopener noreferrer" aria-label="Apri il poster sulla musica su Instagram">
           <img class="h-full w-full object-cover" src="assets/passing-moment.jpg" alt="Poster grunge materico ispirato alla musica, con collage e linee intrecciate" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">05</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">05</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Could the soul survive without music?</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
@@ -91,7 +91,7 @@
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.instagram.com/p/DaIkMQCjcP2/" target="_blank" rel="noopener noreferrer" aria-label="Apri Portrait of desperation su Instagram">
           <img class="h-full w-full object-cover" src="assets/mad.jpg" alt="Poster grunge con figura frammentata in tonalità crema e arancio su fondo scuro" loading="lazy">
-          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">06</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-[var(--accent)] text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
+          <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">06</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
         <div class="project-info flex items-end justify-between gap-3">
           <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Portrait of desperation</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
@@ -106,7 +106,7 @@
     </section>
   </main>
 
-  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 border-t border-[var(--line)] px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
+  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 border-t border-(--line) px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
     <a class="footer-mark" href="index.html">SZ<span>.</span></a>
     <span>FATTO CON CURIOSITÀ, A BRESCIA.</span>
     <a href="about.html#contatti">SCRIVIMI <span aria-hidden="true">↗</span></a>
