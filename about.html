@@ -11,18 +11,18 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-  <header class="site-header">
+  <header class="site-header grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
     <a class="wordmark" href="index.html" aria-label="Sofia Zanini, homepage">SZ<span class="wordmark-dot">.</span></a>
-    <nav class="site-nav" aria-label="Navigazione principale">
+    <nav class="site-nav flex justify-center gap-[clamp(1.5rem,4vw,4.5rem)] max-[760px]:gap-[clamp(.8rem,3.3vw,1.6rem)] max-[400px]:col-span-full max-[400px]:row-start-2 max-[400px]:justify-start max-[400px]:pb-3" aria-label="Navigazione principale">
       <a class="nav-link" href="index.html">Home <span>01</span></a>
       <a class="nav-link" href="lavori.html">Lavori <span>02</span></a>
       <a class="nav-link is-active" href="about.html" aria-current="page">About <span>03</span></a>
     </nav>
-    <a class="header-contact" href="#contatti">Parliamone <span aria-hidden="true">↗</span></a>
+    <a class="header-contact max-[400px]:col-start-2 max-[400px]:row-start-1" href="#contatti">Parliamone <span aria-hidden="true">↗</span></a>
   </header>
 
   <main class="about-page">
-    <section class="page-intro section-pad">
+    <section class="page-intro px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))]">
       <p class="eyebrow reveal">03 / PIACERE, SOFIA</p>
       <h1 class="page-title reveal">About<span class="title-period">.</span></h1>
       <div class="page-intro-bottom reveal">
@@ -31,7 +31,7 @@
       </div>
     </section>
 
-    <section class="about-content section-pad">
+    <section class="about-content px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-2 items-center gap-[11vw] pt-[30px] pb-[145px] max-[760px]:grid-cols-1 max-[760px]:gap-[50px] max-[760px]:pt-[20px] max-[760px]:pb-[90px]">
       <div class="about-profile reveal">
         <img src="assets/sofia-profile.jpg" alt="Foto profilo pubblica di Sofia Zanini su Instagram" width="150" height="150">
       </div>
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="social-section section-pad" id="contatti">
+    <section class="social-section px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-[.8fr_1.2fr] gap-[10vw] pt-[95px] pb-[130px] max-[760px]:grid-cols-1 max-[760px]:gap-[35px] max-[760px]:pt-[75px] max-[760px]:pb-[85px]" id="contatti">
       <div class="social-heading reveal">
         <p class="eyebrow">TROVAMI ONLINE</p>
         <h2>Stay<br><em>connected.</em></h2>
@@ -59,7 +59,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
     <a class="footer-mark" href="index.html">SZ<span>.</span></a>
     <span>FATTO CON CURIOSITÀ, A BRESCIA.</span>
     <a href="https://www.instagram.com/_sofizanini.graphic_/" target="_blank" rel="noopener noreferrer">SAY CIAO <span aria-hidden="true">↗</span></a>
