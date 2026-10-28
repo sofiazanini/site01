@@ -11,7 +11,6 @@
   <script src="script.js" defer></script>
 </head>
 <body class="m-0 bg-(--paper) font-(family-name:--sans) text-(--ink) antialiased">
-  <div class="grain" aria-hidden="true"></div>
   <header class="site-header relative z-10 grid min-h-[78px] grid-cols-[1fr_2fr_1fr] items-center border-b border-(--line) px-[5.2vw] max-[760px]:min-h-[68px] max-[760px]:grid-cols-[auto_1fr_auto] max-[760px]:px-[5vw] max-[400px]:grid-cols-[auto_1fr] max-[400px]:gap-y-0">
     <a class="wordmark" href="index.html" aria-label="Sofia Zanini, homepage">SZ<span class="wordmark-dot">.</span></a>
     <nav class="site-nav flex justify-center gap-[clamp(1.5rem,4vw,4.5rem)] max-[760px]:gap-[clamp(.8rem,3.3vw,1.6rem)] max-[400px]:col-span-full max-[400px]:row-start-2 max-[400px]:justify-start max-[400px]:pb-3" aria-label="Navigazione principale">
@@ -23,24 +22,24 @@
   </header>
 
   <main class="projects-page">
-    <section class="page-intro px-[10.4vw] pt-[92px] pb-[56px] max-[760px]:px-[6vw] max-[760px]:pt-[72px] max-[760px]:pb-[45px] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))]">
+    <section class="page-intro px-[10.4vw] pt-24 pb-14 max-[760px]:px-[6vw] max-[760px]:pt-18 max-[760px]:pb-11 min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))]">
       <p class="eyebrow reveal m-0 text-[#c7c5be]">02 / ARCHIVIO VISIVO</p>
-      <h1 class="page-title reveal my-0 mt-[58px] mb-[48px] text-[clamp(5rem,14vw,13rem)] font-semibold leading-[.8] tracking-[-.105em] max-[760px]:mt-[45px] max-[760px]:mb-[36px]">Lavori<span class="title-period">.</span></h1>
-      <div class="page-intro-bottom reveal flex items-end justify-between">
+      <h1 class="page-title reveal my-0 mt-14 mb-12 text-[clamp(5rem,14vw,13rem)] font-semibold leading-[.8] tracking-[-.105em] max-[760px]:mt-11 max-[760px]:mb-9">Lavori<span class="title-period">.</span></h1>
+      <div class="page-intro-bottom reveal flex items-end justify-between border-b border-(--line) pb-6">
         <p class="m-0 text-[clamp(1rem,1.5vw,1.35rem)] leading-[1.35]">Una raccolta di progetti, esperimenti<br>e idee diventate immagini.</p>
         <span class="text-right leading-[1.7] text-[#c7c5be]">SELEZIONE SOCIAL<br>↘ 06 PROGETTI</span>
       </div>
     </section>
 
-    <section class="project-grid px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-2 gap-x-[3vw] gap-y-[78px] pt-[26px] pb-[108px] max-[760px]:gap-x-[18px] max-[760px]:gap-y-[48px] max-[760px]:pt-[20px] max-[760px]:pb-[90px]" aria-label="Progetti">
+    <section class="project-grid px-[10.4vw] max-[760px]:px-[6vw] min-[1500px]:px-[max(10.4vw,calc((100vw-1200px)/2))] grid grid-cols-2 gap-x-[3vw] gap-y-20 pt-6 pb-28 max-[760px]:gap-x-4 max-[760px]:gap-y-12 max-[760px]:pt-5 max-[760px]:pb-22" aria-label="Progetti">
       <article class="project-card reveal">
         <a class="project-image relative block aspect-[1.22] overflow-hidden bg-[#141414] max-[760px]:aspect-[.85]" href="https://www.instagram.com/p/DeWUWdfDl7m/" target="_blank" rel="noopener noreferrer" aria-label="Apri il progetto Dimusi Magazine su Instagram">
           <img class="h-full w-full object-cover" src="assets/cover.webp" alt="Copertina di Dimusi, progetto di tesi sulla musica contemporanea" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">01</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Dimusi Magazine</h2><p class="m-0 text-[#c0beb8]">PROGETTO DI TESI · EDITORIALE</p></div>
-          <a class="project-platform" href="https://www.instagram.com/p/DeWUWdfDl7m/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Dimusi Magazine</h2><p class="m-0 text-[#c0beb8]">PROGETTO DI TESI · EDITORIALE</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://www.instagram.com/p/DeWUWdfDl7m/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
         </div>
       </article>
 
@@ -49,9 +48,9 @@
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/ddc05a248690489.Y3JvcCwxMDA2LDc4NywxMDksMA.jpg" alt="Anteprima del progetto Doomsday Clock | Corporate Identity" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">02</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Doomsday Clock</h2><p class="m-0 text-[#c0beb8]">CORPORATE IDENTITY</p></div>
-          <a class="project-platform" href="https://dribbble.com/shots/27339931-Doomsday-Clock-Corporate-Identity" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Doomsday Clock</h2><p class="m-0 text-[#c0beb8]">CORPORATE IDENTITY</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://dribbble.com/shots/27339931-Doomsday-Clock-Corporate-Identity" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
         </div>
       </article>
 
@@ -60,9 +59,9 @@
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/8a444e248558731.Y3JvcCwxNjE2LDEyNjQsMCww.jpg" alt="Anteprima del progetto Modula | Playing Cards Design Project" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">03</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Modula</h2><p class="m-0 text-[#c0beb8]">PLAYING CARDS DESIGN</p></div>
-          <a class="project-platform" href="https://dribbble.com/shots/27333273-Modula-Playing-Cards-Design-Project" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Modula</h2><p class="m-0 text-[#c0beb8]">PLAYING CARDS DESIGN</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://dribbble.com/shots/27333273-Modula-Playing-Cards-Design-Project" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
         </div>
       </article>
 
@@ -71,9 +70,9 @@
           <img class="h-full w-full object-cover" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/c0b53a248345995.Y3JvcCwxNjE2LDEyNjQsMCww.jpg" alt="Anteprima del progetto Pittogrammi e Ideogrammi | Visual Synthesis Study" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">04</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Pittogrammi e Ideogrammi</h2><p class="m-0 text-[#c0beb8]">VISUAL SYNTHESIS STUDY</p></div>
-          <a class="project-platform" href="https://dribbble.com/shots/27322563-Pittogrammi-e-Ideogrammi-Visual-Synthesis-Study" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Pittogrammi e Ideogrammi</h2><p class="m-0 text-[#c0beb8]">VISUAL SYNTHESIS STUDY</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://dribbble.com/shots/27322563-Pittogrammi-e-Ideogrammi-Visual-Synthesis-Study" target="_blank" rel="noopener noreferrer">DRIBBBLE ↗</a>
         </div>
       </article>
 
@@ -82,9 +81,9 @@
           <img class="h-full w-full object-cover" src="assets/passing-moment.jpg" alt="Poster grunge materico ispirato alla musica, con collage e linee intrecciate" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">05</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Could the soul survive without music?</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
-          <a class="project-platform" href="https://www.instagram.com/p/DYrAnF4jUCy/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Could the soul survive without music?</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://www.instagram.com/p/DYrAnF4jUCy/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
         </div>
       </article>
 
@@ -93,9 +92,9 @@
           <img class="h-full w-full object-cover" src="assets/mad.jpg" alt="Poster grunge con figura frammentata in tonalità crema e arancio su fondo scuro" loading="lazy">
           <span class="project-number absolute top-[14px] left-[14px] grid h-[36px] w-[36px] place-items-center border border-[#ffffff8c] bg-[#080808] text-white max-[760px]:top-[9px] max-[760px]:left-[9px] max-[760px]:h-[30px] max-[760px]:w-[30px] max-[760px]:text-[.58rem]">06</span><span class="project-open absolute right-[14px] bottom-[14px] grid h-[42px] w-[42px] place-items-center rounded-full bg-(--accent) text-[1.25rem] text-[#080808] transition-transform duration-200 max-[760px]:right-[9px] max-[760px]:bottom-[9px] max-[760px]:h-[34px] max-[760px]:w-[34px]" aria-hidden="true">↗</span>
         </a>
-        <div class="project-info flex items-end justify-between gap-3">
-          <div><h2 class="m-0 mb-[7px] text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Portrait of desperation</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
-          <a class="project-platform" href="https://www.instagram.com/p/DaIkMQCjcP2/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+        <div class="project-info flex items-end justify-between gap-3 pt-4">
+          <div><h2 class="m-0 mb-2 text-[clamp(1.25rem,2.1vw,2rem)] font-medium tracking-[-.06em]">Portrait of desperation</h2><p class="m-0 text-[#c0beb8]">POSTER DESIGN · INSTAGRAM</p></div>
+          <a class="project-platform shrink-0 border-b border-(--ink) pb-1.5 transition-colors duration-200 hover:border-(--accent) hover:text-(--accent) max-[760px]:text-[.55rem]" href="https://www.instagram.com/p/DaIkMQCjcP2/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
         </div>
       </article>
     </section>
@@ -106,10 +105,10 @@
     </section>
   </main>
 
-  <footer class="site-footer flex min-h-[83px] items-center justify-between gap-4 border-t border-(--line) px-[5.2vw] max-[760px]:min-h-[75px] max-[760px]:px-[5vw]">
+  <footer class="site-footer flex min-h-20 items-center justify-between gap-4 border-t border-(--line) px-[5.2vw] max-[760px]:min-h-18 max-[760px]:px-[5vw]">
     <a class="footer-mark" href="index.html">SZ<span>.</span></a>
-    <span>FATTO CON CURIOSITÀ, A BRESCIA.</span>
-    <a href="about.html#contatti">SCRIVIMI <span aria-hidden="true">↗</span></a>
+    <span class="text-center text-(--muted)">FATTO CON CURIOSITÀ, A BRESCIA.</span>
+    <a class="border-b border-(--ink) py-1" href="about.html#contatti">SCRIVIMI <span class="text-(--accent)" aria-hidden="true">↗</span></a>
   </footer>
 </body>
 </html>

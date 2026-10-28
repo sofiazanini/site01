@@ -87,34 +87,3 @@ if (heroGrid) {
     lastPointer = null;
   });
 }
-
-if (!motionPreference.matches && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  let lastPointer = null;
-
-  document.addEventListener('pointermove', (event) => {
-    if (event.target.closest('.hero')) {
-      lastPointer = null;
-      return;
-    }
-
-    const start = lastPointer ?? { x: event.clientX, y: event.clientY };
-    const distance = Math.hypot(event.clientX - start.x, event.clientY - start.y);
-    if (distance < 5 && lastPointer) return;
-    const steps = Math.max(1, Math.min(20, Math.ceil(distance / 6)));
-
-    for (let step = 1; step <= steps; step += 1) {
-      const progress = step / steps;
-      const pixel = document.createElement('span');
-      pixel.className = 'pixel-trail';
-      pixel.setAttribute('aria-hidden', 'true');
-      pixel.style.left = `${start.x + (event.clientX - start.x) * progress}px`;
-      pixel.style.top = `${start.y + (event.clientY - start.y) * progress}px`;
-      pixel.style.setProperty('--pixel-size', `${3 + Math.random() * 3}px`);
-      pixel.style.setProperty('--pixel-opacity', `${0.12 + progress * 0.38}`);
-      document.body.append(pixel);
-      pixel.addEventListener('animationend', () => pixel.remove(), { once: true });
-    }
-
-    lastPointer = { x: event.clientX, y: event.clientY };
-  }, { passive: true });
-}
